@@ -1,0 +1,92 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="https://<IMM_IP>:443">
+ <information>
+   <title>Virtual KVM Client</title>
+    <vendor>IBM</vendor>
+ </information>
+ 
+ <application-desc main-class="com.avocent.ibmc.kvm.Main">
+	  <argument>ip=<IMM_IP></argument>
+    <argument>kmport=3900</argument>
+    <argument>vport=3900</argument>
+	  <argument>user=0x00000000</argument>
+	  <argument>passwd=</argument>
+    <argument>title=<IMM_IP>-Video Viewer</argument>
+    <argument>immversion=2</argument>
+    <argument>vm=1</argument>
+    <argument>apcp=1</argument>
+    <argument>color=2</argument>
+    <argument>language=en</argument>
+    <argument>power=1</argument>
+    <argument>reconnect=2</argument>
+    <argument>smfs=1</argument>
+    <argument>dvr=2</argument>
+    <argument>webuser=0</argument>
+    <argument>export=1</argument>
+	  <argument>help=https://<IMM_IP>:443/designs/imm/aessrp/help/contents.html</argument>
+	  <argument>statusbar=un,ip,pwr,fr,kp,bw,led,enc</argument>
+  </application-desc>
+ 
+ <security>
+  <all-permissions/>
+ </security>
+ 
+ <update check="always" policy="always" />
+ 
+ <resources>
+    <j2se version="1.6+ 1.5+ " />
+    <jar href="/designs/imm/aessrp/avctIBMViewer__V030321.jar" download="eager" main="true" />
+ </resources>
+ 
+ <resources os="Windows" arch="x86">
+    <nativelib href="/designs/imm/aessrp/avctKVMIOWin32__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLWin32__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Windows" arch="amd64">
+    <nativelib href="/designs/imm/aessrp/avctKVMIOWin64__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLWin64__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Windows" arch="x86_64">
+    <nativelib href="/designs/imm/aessrp/avctKVMIOWin64__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLWin64__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Linux" arch="x86">
+    <nativelib href="/designs/imm/aessrp/avctKVMIOLinux32__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLLinux32__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Linux" arch="i386">
+    <nativelib href="/designs/imm/aessrp/avctKVMIOLinux32__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLLinux32__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Linux" arch="i586">
+    <nativelib href="/designs/imm/aessrp/avctKVMIOLinux32__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLLinux32__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Linux" arch="i686">
+     <nativelib href="/designs/imm/aessrp/avctKVMIOLinux32__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLLinux32__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Linux" arch="amd64">
+     <nativelib href="/designs/imm/aessrp/avctKVMIOLinux64__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLLinux64__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Linux" arch="x86_64">
+     <nativelib href="/designs/imm/aessrp/avctKVMIOLinux64__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLLinux64__V030321.jar" download="eager" />
+ </resources>
+ 
+ <resources os="Mac OS X" arch="x86_64">
+     <nativelib href="/designs/imm/aessrp/avctKVMIOMac64__V030321.jar" download="eager" />
+    <nativelib href="/designs/imm/aessrp/avctVMAPI_DLLMac64__V030321.jar" download="eager" />
+ </resources>
+ 
+</jnlp>
